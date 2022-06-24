@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="content" method="upgrade">
+    <name>plg_content_likely</name>
+    <author>Pavel Syomin</author>
+    <creationDate>June 2022</creationDate>
+    <copyright>Copyright (C) 2022 Pavel Syomin. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>pas.ntg@gmail.com</authorEmail>
+    <authorUrl>https://github.com/PavelSyomin</authorUrl>
+    <version>0.1</version>
+    <description>PLG_CONTENT_LIKELY_DESCRIPTION</description>
+    <namespace>PS\Plugin\Content\Likely</namespace>
+    <files>
+        <filename plugin="likely">likely.php</filename>
+        <filename>likely.xml</filename>
+        <folder>language</folder>
+        <folder>tmpl</folder>
+    </files>
+    <media folder="media" destination="plg_content_likely">
+        <folder>css</folder>
+        <folder>js</folder>
+    </media>
+    <updateservers>
+        <server type="extension" priority="1" name="Updates of Likely plugin for Joomla"></server>
+    </updateservers>
+    <config>
+        <fields name="params">
+
+            <fieldset name="basic">
+                <field
+                    name="search_limit"
+                    type="number"
+                    label="JFIELD_PLG_SEARCH_SEARCHLIMIT_LABEL"
+                    default="50"
+                />
+
+            </fieldset>
+
+        </fields>
+    </config>
+</extension>
