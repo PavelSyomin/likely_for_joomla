@@ -25,7 +25,7 @@
     </updateservers>
     <config>
         <fields name="params">
-            <fieldset name="basic">
+            <fieldset name="basic" label="PLG_CONTENT_LIKELY_FIELDSET_BASIC_LABEL">
                 <field
                     name="theme"
                     type="list"
@@ -47,6 +47,325 @@
                     <option value="medium">PLG_CONTENT_LIKELY_SIZE_MEDIUM</option>
                     <option value="big">PLG_CONTENT_LIKELY_SIZE_BIG</option>
                 </field>
+            </fieldset>
+
+            <fieldset name="twitter" label="PLG_CONTENT_LIKELY_FIELDSET_TWITTER_LABEL">
+                <field
+                    name="show_twitter"
+                    type="radio"
+                    layout="joomla.form.field.radio.switcher"
+                    label="PLG_CONTENT_LIKELY_SHOW_TWITTER_LABEL"
+                    description="PLG_CONTENT_LIKELY_SHOW_TWITTER_DESC"
+                    default="1"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                    name="twitter_button_text"
+                    type="text"
+                    label="PLG_CONTENT_LIKELY_BUTTON_TEXT_LABEL"
+                    description="PLG_CONTENT_LIKELY_BUTTON_TEXT_DESC"
+                    default=""
+                    maxlength="30"
+                />
+                <field
+                    name="twitter_button_order"
+                    type="select"
+                    label="PLG_CONTENT_LIKELY_BUTTON_ORDER_LABEL"
+                    description="PLG_CONTENT_LIKELY_BUTTON_ORDER_DESC"
+                    default="1"
+                    first="1"
+                    last="10"
+                    step="1"
+                />
+            </fieldset>
+
+            <fieldset name="facebook" label="PLG_CONTENT_LIKELY_FIELDSET_FACEBOOK_LABEL">
+                <field
+                    name="show_facebook"
+                    type="radio"
+                    layout="joomla.form.field.radio.switcher"
+                    label="PLG_CONTENT_LIKELY_SHOW_FACEBOOK_LABEL"
+                    description="PLG_CONTENT_LIKELY_SHOW_FACEBOOK_DESC"
+                    default="1"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                    name="facebook_button_text"
+                    type="text"
+                    label="PLG_CONTENT_LIKELY_BUTTON_TEXT_LABEL"
+                    description="PLG_CONTENT_LIKELY_BUTTON_TEXT_DESC"
+                    default=""
+                    maxlength="30"
+                />
+                <field
+                    name="facebook_button_order"
+                    type="select"
+                    label="PLG_CONTENT_LIKELY_BUTTON_ORDER_LABEL"
+                    description="PLG_CONTENT_LIKELY_BUTTON_ORDER_DESC"
+                    default="1"
+                    first="1"
+                    last="10"
+                    step="1"
+                />
+            </fieldset>
+
+            <fieldset name="linkedin" label="PLG_CONTENT_LIKELY_FIELDSET_LINKEDIN_LABEL">
+                <field
+                    name="show_linkedin"
+                    type="radio"
+                    layout="joomla.form.field.radio.switcher"
+                    label="PLG_CONTENT_LIKELY_SHOW_LINKEDIN_LABEL"
+                    description="PLG_CONTENT_LIKELY_SHOW_LINKEDIN_DESC"
+                    default="1"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                    name="linkedin_button_text"
+                    type="text"
+                    label="PLG_CONTENT_LIKELY_BUTTON_TEXT_LABEL"
+                    description="PLG_CONTENT_LIKELY_BUTTON_TEXT_DESC"
+                    default=""
+                    maxlength="30"
+                />
+                <field
+                    name="linkedin_button_order"
+                    type="select"
+                    label="PLG_CONTENT_LIKELY_BUTTON_ORDER_LABEL"
+                    description="PLG_CONTENT_LIKELY_BUTTON_ORDER_DESC"
+                    default="1"
+                    first="1"
+                    last="10"
+                    step="1"
+                />
+            </fieldset>
+
+            <fieldset name="reddit" label="PLG_CONTENT_LIKELY_FIELDSET_REDDIT_LABEL">
+                <field
+                    name="show_reddit"
+                    type="radio"
+                    layout="joomla.form.field.radio.switcher"
+                    label="PLG_CONTENT_LIKELY_SHOW_REDDIT_LABEL"
+                    description="PLG_CONTENT_LIKELY_SHOW_REDDIT_DESC"
+                    default="1"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                    name="reddit_button_text"
+                    type="text"
+                    label="PLG_CONTENT_LIKELY_BUTTON_TEXT_LABEL"
+                    description="PLG_CONTENT_LIKELY_BUTTON_TEXT_DESC"
+                    default=""
+                    maxlength="30"
+                />
+                <field
+                    name="reddit_button_order"
+                    type="select"
+                    label="PLG_CONTENT_LIKELY_BUTTON_ORDER_LABEL"
+                    description="PLG_CONTENT_LIKELY_BUTTON_ORDER_DESC"
+                    default="1"
+                    first="1"
+                    last="10"
+                    step="1"
+                />
+            </fieldset>
+            <fieldset name="vk" label="PLG_CONTENT_LIKELY_FIELDSET_VK_LABEL">
+                <field
+                    name="show_vk"
+                    type="radio"
+                    layout="joomla.form.field.radio.switcher"
+                    label="PLG_CONTENT_LIKELY_SHOW_VK_LABEL"
+                    description="PLG_CONTENT_LIKELY_SHOW_VK_DESC"
+                    default="1"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                    name="vk_button_text"
+                    type="text"
+                    label="PLG_CONTENT_LIKELY_BUTTON_TEXT_LABEL"
+                    description="PLG_CONTENT_LIKELY_BUTTON_TEXT_DESC"
+                    default=""
+                    maxlength="30"
+                />
+                <field
+                    name="vk_button_order"
+                    type="select"
+                    label="PLG_CONTENT_LIKELY_BUTTON_ORDER_LABEL"
+                    description="PLG_CONTENT_LIKELY_BUTTON_ORDER_DESC"
+                    default="1"
+                    first="1"
+                    last="10"
+                    step="1"
+                />
+            </fieldset>
+
+            <fieldset name="odnoklasskini" label="PLG_CONTENT_LIKELY_FIELDSET_ODNOKLASSNIKI_LABEL">
+                <field
+                    name="show_odnoklasskini"
+                    type="radio"
+                    layout="joomla.form.field.radio.switcher"
+                    label="PLG_CONTENT_LIKELY_SHOW_ODNOKLASSNIKI_LABEL"
+                    description="PLG_CONTENT_LIKELY_SHOW_ODNOKLASSNIKI_DESC"
+                    default="1"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                    name="odnoklasskini_button_text"
+                    type="text"
+                    label="PLG_CONTENT_LIKELY_BUTTON_TEXT_LABEL"
+                    description="PLG_CONTENT_LIKELY_BUTTON_TEXT_DESC"
+                    default=""
+                    maxlength="30"
+                />
+                <field
+                    name="odnoklasskini_button_order"
+                    type="select"
+                    label="PLG_CONTENT_LIKELY_BUTTON_ORDER_LABEL"
+                    description="PLG_CONTENT_LIKELY_BUTTON_ORDER_DESC"
+                    default="1"
+                    first="1"
+                    last="10"
+                    step="1"
+                />
+            </fieldset>
+
+            <fieldset name="whatsapp" label="PLG_CONTENT_LIKELY_FIELDSET_WHATSAPP_LABEL">
+                <field
+                    name="show_whatsapp"
+                    type="radio"
+                    layout="joomla.form.field.radio.switcher"
+                    label="PLG_CONTENT_LIKELY_SHOW_WHATSAPP_LABEL"
+                    description="PLG_CONTENT_LIKELY_SHOW_WHATSAPP_DESC"
+                    default="1"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                    name="whatsapp_button_text"
+                    type="text"
+                    label="PLG_CONTENT_LIKELY_BUTTON_TEXT_LABEL"
+                    description="PLG_CONTENT_LIKELY_BUTTON_TEXT_DESC"
+                    default=""
+                    maxlength="30"
+                />
+                <field
+                    name="whatsapp_button_order"
+                    type="select"
+                    label="PLG_CONTENT_LIKELY_BUTTON_ORDER_LABEL"
+                    description="PLG_CONTENT_LIKELY_BUTTON_ORDER_DESC"
+                    default="1"
+                    first="1"
+                    last="10"
+                    step="1"
+                />
+            </fieldset>
+
+            <fieldset name="viber" label="PLG_CONTENT_LIKELY_FIELDSET_VIBER_LABEL">
+                <field
+                    name="show_viber"
+                    type="radio"
+                    layout="joomla.form.field.radio.switcher"
+                    label="PLG_CONTENT_LIKELY_SHOW_VIBER_LABEL"
+                    description="PLG_CONTENT_LIKELY_SHOW_VIBER_DESC"
+                    default="1"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                    name="viber_button_text"
+                    type="text"
+                    label="PLG_CONTENT_LIKELY_BUTTON_TEXT_LABEL"
+                    description="PLG_CONTENT_LIKELY_BUTTON_TEXT_DESC"
+                    default=""
+                    maxlength="30"
+                />
+                <field
+                    name="viber_button_order"
+                    type="select"
+                    label="PLG_CONTENT_LIKELY_BUTTON_ORDER_LABEL"
+                    description="PLG_CONTENT_LIKELY_BUTTON_ORDER_DESC"
+                    default="1"
+                    first="1"
+                    last="10"
+                    step="1"
+                />
+            </fieldset>
+
+            <fieldset name="telegram" label="PLG_CONTENT_LIKELY_FIELDSET_TELEGRAM_LABEL">
+                <field
+                    name="show_telegram"
+                    type="radio"
+                    layout="joomla.form.field.radio.switcher"
+                    label="PLG_CONTENT_LIKELY_SHOW_TELEGRAM_LABEL"
+                    description="PLG_CONTENT_LIKELY_SHOW_TELEGRAM_DESC"
+                    default="1"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                    name="telegram_button_text"
+                    type="text"
+                    label="PLG_CONTENT_LIKELY_BUTTON_TEXT_LABEL"
+                    description="PLG_CONTENT_LIKELY_BUTTON_TEXT_DESC"
+                    default=""
+                    maxlength="30"
+                />
+                <field
+                    name="telegram_button_order"
+                    type="select"
+                    label="PLG_CONTENT_LIKELY_BUTTON_ORDER_LABEL"
+                    description="PLG_CONTENT_LIKELY_BUTTON_ORDER_DESC"
+                    default="1"
+                    first="1"
+                    last="10"
+                    step="1"
+                />
+            </fieldset>
+
+            <fieldset name="pinterest" label="PLG_CONTENT_LIKELY_FIELDSET_PINTEREST_LABEL">
+                <field
+                    name="show_pinterest"
+                    type="radio"
+                    layout="joomla.form.field.radio.switcher"
+                    label="PLG_CONTENT_LIKELY_SHOW_PINTEREST_LABEL"
+                    description="PLG_CONTENT_LIKELY_SHOW_PINTEREST_DESC"
+                    default="1"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                    name="pinterest_button_text"
+                    type="text"
+                    label="PLG_CONTENT_LIKELY_BUTTON_TEXT_LABEL"
+                    description="PLG_CONTENT_LIKELY_BUTTON_TEXT_DESC"
+                    default=""
+                    maxlength="30"
+                />
+                <field
+                    name="pinterest_button_order"
+                    type="select"
+                    label="PLG_CONTENT_LIKELY_BUTTON_ORDER_LABEL"
+                    description="PLG_CONTENT_LIKELY_BUTTON_ORDER_DESC"
+                    default="1"
+                    first="1"
+                    last="10"
+                    step="1"
+                />
             </fieldset>
         </fields>
     </config>
