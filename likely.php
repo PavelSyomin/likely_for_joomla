@@ -8,52 +8,26 @@ use Joomla\CMS\Plugin\PluginHelper;
 use Joomla\Event\Event;
 use Joomla\Event\SubscriberInterface;
 
-class PlgContentLikely extends CMSPlugin implements SubscriberInterface
+class PlgContentLikely extends CMSPlugin
 {
-    /**
-     * Load the language file on instantiation
-     *
-     * @var    boolean
-     * @since  3.1
-     */
+
     protected $autoloadLanguage = true;
 
     protected $app;
 
-    /**
-     * Returns an array of events this subscriber will listen to.
-     *
-     * @return  array
-     */
-    public static function getSubscribedEvents(): array
+    public function onContentAfterDisplay($context, &$row, &$params, $page = 0)
     {
-        return [
-            'onContentAfterDisplay' => 'displayButtons',
-        ];
-    }
 
-    /**
-     * Plugin method is the array value in the getSubscribedEvents method
-     * The plugin then modifies the Event object (if it's not immutable)
-     */
-     public function displayButtons(Event $event)
-     {
-        /*
-         * Plugin code goes here.
-         * You can access parameters via $this->params
-         */
+        $wa = $this->app->getDocument()->getWebAssetManager();
+        $wa->registerAndUseScript('likely', 'plg_content_likely/likely.js');
+        $wa->registerAndUseStyle('likely', 'plg_content_likely/likely.css');
 
-         $wa = $this->app->getDocument()->getWebAssetManager();
-         $wa->registerScript('likely', 'plg_content_likely/likely.js');
-         $wa->useScript('likely');
+        $path = PluginHelper::getLayoutPath('content', 'likely');
 
-         $path = PluginHelper::getLayoutPath('content', 'likely');
-
-         ob_start();
-         require $path;
-         $result = ob_get_clean();
+        ob_start();
+        require $path;
+        $result = ob_get_clean();
 
         return $result;
     }
 }
-?>
