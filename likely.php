@@ -17,6 +17,13 @@ class PlgContentLikely extends CMSPlugin
 
     public function onContentAfterDisplay($context, &$row, &$params, $page = 0)
     {
+        $parts = explode('.', $context);
+        $view  = $this->app->input->getString('view', '');
+
+        if ($parts[0] !== 'com_content' or $view !== 'article')
+        {
+            return;
+        }
 
         $wa = $this->app->getDocument()->getWebAssetManager();
         $wa->registerAndUseScript('likely', 'plg_content_likely/likely.js');
