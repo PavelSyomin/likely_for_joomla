@@ -25,17 +25,29 @@
     </updateservers>
     <config>
         <fields name="params">
-
             <fieldset name="basic">
                 <field
-                    name="search_limit"
-                    type="number"
-                    label="JFIELD_PLG_SEARCH_SEARCHLIMIT_LABEL"
-                    default="50"
-                />
-
+                    name="theme"
+                    type="list"
+                    label="PLG_CONTENT_LIKELY_THEME_LABEL"
+                    description="PLG_CONTENT_LIKELY_THEME_DESC"
+                    default="normal"
+                >
+                    <option value="normal">PLG_CONTENT_LIKELY_THEME_NORMAL</option>
+                    <option value="light">PLG_CONTENT_LIKELY_THEME_LIGHT</option>
+                </field>
+                <field
+                    name="size"
+                    type="list"
+                    label="PLG_CONTENT_LIKELY_SIZE_LABEL"
+                    description="PLG_CONTENT_LIKELY_SIZE_DESC"
+                    default="normal"
+                >
+                    <option value="small">PLG_CONTENT_LIKELY_SIZE_SMALL</option>
+                    <option value="medium">PLG_CONTENT_LIKELY_SIZE_MEDIUM</option>
+                    <option value="big">PLG_CONTENT_LIKELY_SIZE_BIG</option>
+                </field>
             </fieldset>
-
         </fields>
     </config>
 </extension>

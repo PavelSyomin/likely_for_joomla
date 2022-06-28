@@ -3,9 +3,12 @@
 // no direct access
 defined( '_JEXEC' ) or die;
 
+$theme_suffix = $this->theme == 'normal' ? '' : ' likely-light';
+$size_suffix  = $this->size == 'medium' ? '' : ' likely-' . $this->size;
+
 ?>
 
-<div class="likely">
+<div class="likely<?php echo $theme_suffix . $size_suffix; ?>">
     <div class="facebook">Share</div>
     <div class="twitter">Tweet</div>
     <div class="vkontakte">Share</div>

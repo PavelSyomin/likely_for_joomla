@@ -15,6 +15,18 @@ class PlgContentLikely extends CMSPlugin
 
     protected $app;
 
+    protected $theme;
+
+    protected $size;
+
+    public function __construct(&$subject, $config)
+    {
+        parent::__construct($subject, $config);
+
+        $this->theme = $this->params->get('theme', 'normal');
+        $this->size  = $this->params->get('size', 'medium');
+    }
+
     public function onContentAfterDisplay($context, &$row, &$params, $page = 0)
     {
         $parts = explode('.', $context);
