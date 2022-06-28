@@ -1,2 +1,3 @@
-# likely_for_joomla
-Plugin of Likely social buttons for Joomla
+# Likely for Joomla
+
+Plugin of [Likely social sharing buttons](https://ilyabirman.net/likely/) for Joomla.
