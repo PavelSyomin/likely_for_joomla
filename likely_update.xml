@@ -10,7 +10,7 @@
         <version>1.0.0-alpha</version>
         <changelogurl>https://github.com/PavelSyomin/likely_for_joomla/raw/main/changelog.xml</changelogurl>
         <downloads>
-            <downloadurl type="full" format="zip"></downloadurl>
+            <downloadurl type="full" format="zip">https://github.com/PavelSyomin/likely_for_joomla/releases/download/1.0.0-alpha/joomla-likely.zip</downloadurl>
         </downloads>
         <maintainer>Pavel Syomin</maintainer>
         <maintainerurl>https://github.com/PavelSyomin</maintainerurl>
