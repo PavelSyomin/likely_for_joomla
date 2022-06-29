@@ -22,6 +22,8 @@ class PlgContentLikely extends CMSPlugin
 
     protected $size;
 
+    protected $counters;
+
     protected $buttons;
 
     public function __construct(&$subject, $config)
@@ -30,6 +32,7 @@ class PlgContentLikely extends CMSPlugin
 
         $this->theme = $this->params->get('theme', 'normal');
         $this->size  = $this->params->get('size', 'medium');
+        $this->counters = $this->params->get('counters', 1);
         $this->getButtons();
     }
 

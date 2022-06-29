@@ -34,7 +34,8 @@
                     default="normal"
                 >
                     <option value="normal">PLG_CONTENT_LIKELY_THEME_NORMAL</option>
-                    <option value="light">PLG_CONTENT_LIKELY_THEME_LIGHT</option>
+                    <option value="dark">PLG_CONTENT_LIKELY_THEME_DARK</option>
+                    <option value="user">PLG_CONTENT_LIKELY_THEME_USER</option>
                 </field>
                 <field
                     name="size"
@@ -46,6 +47,17 @@
                     <option value="small">PLG_CONTENT_LIKELY_SIZE_SMALL</option>
                     <option value="medium">PLG_CONTENT_LIKELY_SIZE_MEDIUM</option>
                     <option value="big">PLG_CONTENT_LIKELY_SIZE_BIG</option>
+                </field>
+                <field
+                    name="counters"
+                    type="radio"
+                    layout="joomla.form.field.radio.switcher"
+                    label="PLG_CONTENT_LIKELY_COUNTERS_LABEL"
+                    description="PLG_CONTENT_LIKELY_COUNTERS_DESC"
+                    default="1"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
                 </field>
             </fieldset>
 
