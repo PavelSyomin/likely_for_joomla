@@ -9,7 +9,6 @@
     <authorUrl>https://github.com/PavelSyomin</authorUrl>
     <version>0.1</version>
     <description>PLG_CONTENT_LIKELY_DESCRIPTION</description>
-    <namespace>PS\Plugin\Content\Likely</namespace>
     <files>
         <filename plugin="likely">likely.php</filename>
         <filename>likely.xml</filename>
