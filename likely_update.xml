@@ -3,7 +3,7 @@
     <update>
         <name>Content - Likely social sharing buttons</name>
         <description>This is Likely 1.0</description>
-        <element>plg_content_likely</element>
+        <element>likely</element>
         <type>plugin</type>
         <folder>content</folder>
         <client>site</client>
