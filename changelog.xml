@@ -2,9 +2,12 @@
     <changelog>
         <element>plg_content_likely</changelog>
         <type>plugin</type>
-        <version>1.0.0</version>
+        <version>1.0.0-alpha</version>
+        <change>
+            <item>First alpha.</item>
+        </change>
         <note>
-            <item>First stable release</item>
+            <item>Date of release: 2022-06-29.</item>
         </note>
     </changelog>
 </changelogs>
