@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelogs>
     <changelog>
-        <element>plg_content_likely</changelog>
+        <element>likely</element>
         <type>plugin</type>
         <version>1.0.1-alpha</version>
         <change>
