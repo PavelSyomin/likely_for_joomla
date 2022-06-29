@@ -25,7 +25,7 @@
     </updateservers>
     <config>
         <fields name="params">
-            <fieldset name="basic" label="PLG_CONTENT_LIKELY_FIELDSET_BASIC_LABEL">
+            <fieldset name="basic">
                 <field
                     name="theme"
                     type="list"
@@ -41,7 +41,7 @@
                     type="list"
                     label="PLG_CONTENT_LIKELY_SIZE_LABEL"
                     description="PLG_CONTENT_LIKELY_SIZE_DESC"
-                    default="normal"
+                    default="medium"
                 >
                     <option value="small">PLG_CONTENT_LIKELY_SIZE_SMALL</option>
                     <option value="medium">PLG_CONTENT_LIKELY_SIZE_MEDIUM</option>
@@ -71,7 +71,7 @@
                 />
                 <field
                     name="twitter_button_order"
-                    type="select"
+                    type="integer"
                     label="PLG_CONTENT_LIKELY_BUTTON_ORDER_LABEL"
                     description="PLG_CONTENT_LIKELY_BUTTON_ORDER_DESC"
                     default="1"
@@ -103,10 +103,10 @@
                 />
                 <field
                     name="facebook_button_order"
-                    type="select"
+                    type="integer"
                     label="PLG_CONTENT_LIKELY_BUTTON_ORDER_LABEL"
                     description="PLG_CONTENT_LIKELY_BUTTON_ORDER_DESC"
-                    default="1"
+                    default="2"
                     first="1"
                     last="10"
                     step="1"
@@ -135,10 +135,10 @@
                 />
                 <field
                     name="linkedin_button_order"
-                    type="select"
+                    type="integer"
                     label="PLG_CONTENT_LIKELY_BUTTON_ORDER_LABEL"
                     description="PLG_CONTENT_LIKELY_BUTTON_ORDER_DESC"
-                    default="1"
+                    default="3"
                     first="1"
                     last="10"
                     step="1"
@@ -167,29 +167,29 @@
                 />
                 <field
                     name="reddit_button_order"
-                    type="select"
+                    type="integer"
                     label="PLG_CONTENT_LIKELY_BUTTON_ORDER_LABEL"
                     description="PLG_CONTENT_LIKELY_BUTTON_ORDER_DESC"
-                    default="1"
+                    default="4"
                     first="1"
                     last="10"
                     step="1"
                 />
             </fieldset>
-            <fieldset name="vk" label="PLG_CONTENT_LIKELY_FIELDSET_VK_LABEL">
+            <fieldset name="vkontakte" label="PLG_CONTENT_LIKELY_FIELDSET_VKONTAKTE_LABEL">
                 <field
-                    name="show_vk"
+                    name="show_vkontakte"
                     type="radio"
                     layout="joomla.form.field.radio.switcher"
-                    label="PLG_CONTENT_LIKELY_SHOW_VK_LABEL"
-                    description="PLG_CONTENT_LIKELY_SHOW_VK_DESC"
+                    label="PLG_CONTENT_LIKELY_SHOW_VKONTAKTE_LABEL"
+                    description="PLG_CONTENT_LIKELY_SHOW_VKONTAKTE_DESC"
                     default="1"
                 >
                     <option value="0">JNO</option>
                     <option value="1">JYES</option>
                 </field>
                 <field
-                    name="vk_button_text"
+                    name="vkontakte_button_text"
                     type="text"
                     label="PLG_CONTENT_LIKELY_BUTTON_TEXT_LABEL"
                     description="PLG_CONTENT_LIKELY_BUTTON_TEXT_DESC"
@@ -197,20 +197,20 @@
                     maxlength="30"
                 />
                 <field
-                    name="vk_button_order"
-                    type="select"
+                    name="vkontakte_button_order"
+                    type="integer"
                     label="PLG_CONTENT_LIKELY_BUTTON_ORDER_LABEL"
                     description="PLG_CONTENT_LIKELY_BUTTON_ORDER_DESC"
-                    default="1"
+                    default="5"
                     first="1"
                     last="10"
                     step="1"
                 />
             </fieldset>
 
-            <fieldset name="odnoklasskini" label="PLG_CONTENT_LIKELY_FIELDSET_ODNOKLASSNIKI_LABEL">
+            <fieldset name="odnoklassniki" label="PLG_CONTENT_LIKELY_FIELDSET_ODNOKLASSNIKI_LABEL">
                 <field
-                    name="show_odnoklasskini"
+                    name="show_odnoklassniki"
                     type="radio"
                     layout="joomla.form.field.radio.switcher"
                     label="PLG_CONTENT_LIKELY_SHOW_ODNOKLASSNIKI_LABEL"
@@ -221,7 +221,7 @@
                     <option value="1">JYES</option>
                 </field>
                 <field
-                    name="odnoklasskini_button_text"
+                    name="odnoklassniki_button_text"
                     type="text"
                     label="PLG_CONTENT_LIKELY_BUTTON_TEXT_LABEL"
                     description="PLG_CONTENT_LIKELY_BUTTON_TEXT_DESC"
@@ -229,11 +229,11 @@
                     maxlength="30"
                 />
                 <field
-                    name="odnoklasskini_button_order"
-                    type="select"
+                    name="odnoklassniki_button_order"
+                    type="integer"
                     label="PLG_CONTENT_LIKELY_BUTTON_ORDER_LABEL"
                     description="PLG_CONTENT_LIKELY_BUTTON_ORDER_DESC"
-                    default="1"
+                    default="6"
                     first="1"
                     last="10"
                     step="1"
@@ -262,10 +262,10 @@
                 />
                 <field
                     name="whatsapp_button_order"
-                    type="select"
+                    type="integer"
                     label="PLG_CONTENT_LIKELY_BUTTON_ORDER_LABEL"
                     description="PLG_CONTENT_LIKELY_BUTTON_ORDER_DESC"
-                    default="1"
+                    default="7"
                     first="1"
                     last="10"
                     step="1"
@@ -294,10 +294,10 @@
                 />
                 <field
                     name="viber_button_order"
-                    type="select"
+                    type="integer"
                     label="PLG_CONTENT_LIKELY_BUTTON_ORDER_LABEL"
                     description="PLG_CONTENT_LIKELY_BUTTON_ORDER_DESC"
-                    default="1"
+                    default="8"
                     first="1"
                     last="10"
                     step="1"
@@ -326,10 +326,10 @@
                 />
                 <field
                     name="telegram_button_order"
-                    type="select"
+                    type="integer"
                     label="PLG_CONTENT_LIKELY_BUTTON_ORDER_LABEL"
                     description="PLG_CONTENT_LIKELY_BUTTON_ORDER_DESC"
-                    default="1"
+                    default="9"
                     first="1"
                     last="10"
                     step="1"
@@ -358,10 +358,10 @@
                 />
                 <field
                     name="pinterest_button_order"
-                    type="select"
+                    type="integer"
                     label="PLG_CONTENT_LIKELY_BUTTON_ORDER_LABEL"
                     description="PLG_CONTENT_LIKELY_BUTTON_ORDER_DESC"
-                    default="1"
+                    default="10"
                     first="1"
                     last="10"
                     step="1"

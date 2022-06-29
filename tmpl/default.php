@@ -9,14 +9,7 @@ $size_suffix  = $this->size == 'medium' ? '' : ' likely-' . $this->size;
 ?>
 
 <div class="likely<?php echo $theme_suffix . $size_suffix; ?>">
-    <div class="facebook">Share</div>
-    <div class="twitter">Tweet</div>
-    <div class="vkontakte">Share</div>
-    <div class="pinterest">Pin</div>
-    <div class="odnoklassniki">Like</div>
-    <div class="telegram">Send</div>
-    <div class="linkedin">Share</div>
-    <div class="whatsapp">Send</div>
-    <div class="viber">Send</div>
-    <div class="reddit">Share</div>
+<?php foreach ($this->buttons as $button) : ?>
+    <div class="<?php echo $button[0]; ?>"><?php echo $button[1]; ?></div>
+<?php endforeach; ?>
 </div>
