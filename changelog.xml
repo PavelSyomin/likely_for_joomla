@@ -3,7 +3,7 @@
     <changelog>
         <element>likely</element>
         <type>plugin</type>
-        <version>1.0.1-alpha</version>
+        <version>1.0.0-alpha</version>
         <change>
             <item>First alpha.</item>
         </change>
