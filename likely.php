@@ -71,8 +71,9 @@ class PlgContentLikely extends CMSPlugin
 
             $buttonText = $this->getButtonText($buttonName);
             $buttonOrder = $this->params->get($buttonName . '_button_order', 0);
+            $buttonAriaLabel = Text::sprintf(Text::_('PLG_CONTENT_LIKELY_ARIA_LABEL'), ucfirst($buttonName));
 
-            $buttons[] = [$buttonName, $buttonText, $buttonOrder];
+            $buttons[] = [$buttonName, $buttonText, $buttonOrder, $buttonAriaLabel];
         }
 
         usort($buttons, function($a, $b)
