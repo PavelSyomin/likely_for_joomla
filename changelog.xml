@@ -1,0 +1,10 @@
+<changelogs>
+    <changelog>
+        <element>plg_content_likely</changelog>
+        <type>plugin</type>
+        <version>1.0.0</version>
+        <note>
+            <item>First stable release</item>
+        </note>
+    </changelog>
+</changelogs>

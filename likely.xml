@@ -19,8 +19,9 @@
         <folder>css</folder>
         <folder>js</folder>
     </media>
+    <changelogurl>https://github.com/PavelSyomin/likely_for_joomla/raw/main/changelog.xml</changelogurl>
     <updateservers>
-        <server type="extension" priority="1" name="Updates of Likely plugin for Joomla"></server>
+        <server type="extension" priority="1" name="Updates of Likely plugin for Joomla">https://github.com/PavelSyomin/likely_for_joomla/raw/main/likely_update.xml</server>
     </updateservers>
     <config>
         <fields name="params">
