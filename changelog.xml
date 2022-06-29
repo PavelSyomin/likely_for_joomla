@@ -2,7 +2,7 @@
     <changelog>
         <element>plg_content_likely</changelog>
         <type>plugin</type>
-        <version>1.0.0-alpha</version>
+        <version>1.0.0-alpha.1</version>
         <change>
             <item>First alpha.</item>
         </change>
