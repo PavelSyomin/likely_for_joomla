@@ -3,9 +3,9 @@
     <changelog>
         <element>likely</element>
         <type>plugin</type>
-        <version>1.0.0-alpha</version>
+        <version>1.0.0</version>
         <change>
-            <item>First alpha.</item>
+            <item>Initial release.</item>
         </change>
         <note>
             <item>Date of release: 2022-06-29.</item>
