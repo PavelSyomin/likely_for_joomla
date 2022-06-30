@@ -34,3 +34,4 @@ When one shares a page in a social network or a messenger, a snippet is usually 
 
 If you think that this plugin should have an option to add OpenGraph tags so a website administrator will not have to install extra extensions, please open an issue, and I will think about adding this feature.
 
+[То же самое по-русски](README_RU.md)
