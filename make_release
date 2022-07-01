@@ -1,6 +1,6 @@
 #! /bin/sh
 
-zip -r --filesync "joomla-likely$1".zip language/ media/ tmpl/ likely.php likely.xml LICENSE
+zip -r --filesync "likely_$1".zip language/ media/ tmpl/ likely.php likely.xml LICENSE
 
 exit 0
 
