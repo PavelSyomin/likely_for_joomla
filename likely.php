@@ -1,4 +1,11 @@
 <?php
+/**
+ * @package     Likly, a Joomla plugin
+ *
+ * @author      Pavel Syomin
+ * @copyright   Copyright © Pavel Syomin, 2022
+ * @license     GNU General Public License version 3; see LICENSE.txt
+ */
 
 // no direct access
 defined( '_JEXEC' ) or die;
