@@ -14,6 +14,6 @@
         </downloads>
         <maintainer>Pavel Syomin</maintainer>
         <maintainerurl>https://github.com/PavelSyomin</maintainerurl>
-        <targetplatform name="joomla" version="(4.*)"/>
+        <targetplatform name="joomla" version="(4.*)|(5.x)"/>
     </update>
 </updates>
